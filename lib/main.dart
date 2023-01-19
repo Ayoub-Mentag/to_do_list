@@ -72,6 +72,7 @@ class TodoListState extends State<TodoList> {
         // itemBuilder will be automatically be called as many times as it takes for the
         // list to fill up its available space, which is most likely more than the
         // number of todo items we have. So, we need to check the index is OK.
+        //the index incremented automatically 
         if(index < _todoItems.length) {
           return _buildTodoItem(_todoItems[index], index);
         }
